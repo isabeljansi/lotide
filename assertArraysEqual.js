@@ -12,9 +12,9 @@ const eqArrays = function(arrayOne, arrayTwo){
   return result;
 };
 
-const assertArraysEqual = function (array1,array2){
-  let finalResult = eqArrays(array1,array2);
-  return (finalResult ? console.log(`✅ Passed ${array1} === ${array2}`) : console.log(`❌ Failed ${array1} !== ${array2}`))
+const assertArraysEqual = function (actualArray,expectedArray){
+  let finalResult = eqArrays(actualArray,expectedArray);
+  return (finalResult ? console.log(`✅ Passed ${actualArray} === ${expectedArray}`) : console.log(`❌ Failed ${actualArray} !== ${expectedArray}`))
 }; 
 
 assertArraysEqual([1,2,3,4],[1,2,3]); 
