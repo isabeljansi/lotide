@@ -1,10 +1,9 @@
-// ASSERT FUNCTION IMPLEMENTATION
-const assertEqual = require('./assertEqual');
 
-// HEAD FUNCTION IMPLEMENTATION
-const head = function(arrayList) {
-  return arrayList[0];
-};
+// test/headTest.js
+const assertEqual = require('../assertEqual');
+const assertEqual = require('../head');
+
+
 
 // TEST CODE
 assertEqual(head([5,6,7]), 5);
@@ -13,4 +12,3 @@ assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head([5]), 5);
 //An empty array should yield undefined as its head
 assertEqual(head([]),);
-
