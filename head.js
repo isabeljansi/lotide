@@ -14,3 +14,5 @@ assertEqual(head([5]), 5);
 //An empty array should yield undefined as its head
 assertEqual(head([]),);
 
+module.exports = head;
+
